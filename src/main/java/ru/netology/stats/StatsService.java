@@ -18,7 +18,7 @@ public class StatsService {
         for (long sale : sales) {
             month = month + 1;
         }
-        int averagesum =(int) (sum / month);
+        int averagesum = (int) (sum / month);
         return averagesum;
     }
 
@@ -49,8 +49,8 @@ public class StatsService {
     public int AboveAverage(long[] sales) {
         long averagesum = AverageSum(sales);
         int aboveaverage = 0;
-        for(long sale:sales){
-            if (averagesum >sale) {
+        for (long sale : sales) {
+            if (averagesum > sale) {
                 aboveaverage++;
             }
         }

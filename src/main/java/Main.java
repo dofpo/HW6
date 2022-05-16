@@ -5,7 +5,7 @@ public class Main {
         StatsService manager = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         System.out.println(manager.sum(sales));
-        System.out.println(manager.averagesum(sales));
+        System.out.println(manager.AverageSum(sales));
         System.out.println(manager.NumbMonthMaxSale(sales));
         System.out.println(manager.NumbMonthMinSale(sales));
         System.out.println(manager.AboveAverage(sales));

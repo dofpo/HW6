@@ -7,7 +7,7 @@ public class TestSales {
     @Test
     public void TestAllSumm() {
         StatsService manager = new StatsService();
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int actual = (int) manager.sum(sales);
         int expected = 8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18;
         Assertions.assertEquals(expected, actual);
@@ -16,8 +16,8 @@ public class TestSales {
     @Test
     public void TestAverageSum() {
         StatsService manager = new StatsService();
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual =(int) manager.AverageSum(sales);
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int actual = (int) manager.AverageSum(sales);
         int expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
         Assertions.assertEquals(expected, actual);
     }
