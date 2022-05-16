@@ -17,7 +17,7 @@ public class TestSales {
     public void TestAverageSum() {
         StatsService manager = new StatsService();
         long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual =(int) manager.averagesum(sales);
+        int actual =(int) manager.AverageSum(sales);
         int expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
         Assertions.assertEquals(expected, actual);
     }
