@@ -47,25 +47,25 @@ public class StatsService {
     }
 
     public int AboveAverage(long[] sales) {
-        long averagesum = AverageSum(sales);
-        int aboveaverage = 0;
+        long AverageSum = AverageSum(sales);
+        int AboveAverage = 0;
         for (long sale : sales) {
-            if (averagesum > sale) {
-                aboveaverage++;
+            if (AverageSum > sale) {
+                AboveAverage++;
             }
         }
-        return aboveaverage;
+        return AboveAverage;
     }
 
     public int BelowAverage(long[] sales) {
         int month = 0;
-        long averagesum = AverageSum(sales);
-        int belowaverage = 0;
+        long AverageSum = AverageSum(sales);
+        int BelowAverage = 0;
         for (long sale : sales) {
-            if (averagesum < sale) {
-                belowaverage++;
+            if (AverageSum < sale) {
+                BelowAverage++;
             }
         }
-        return belowaverage;
+        return BelowAverage;
     }
 }
