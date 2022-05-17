@@ -12,17 +12,17 @@ public class StatsService {
 
     }
 
-    public int AverageSum(long[] sales) {
+    public int averageSums(long[] sales) {
         long sum = sum(sales);
         int month = 0;
         for (long sale : sales) {
             month = month + 1;
         }
-        int averagesum = (int) (sum / month);
-        return averagesum;
+        int averageSum = (int) (sum / month);
+        return averageSum;
     }
 
-    public int NumbMonthMaxSale(long[] sales) {
+    public int numbMonthMaxSale(long[] sales) {
         int maxMonth = 0;
         int month = 0;
         for (long sale : sales) {
@@ -34,7 +34,7 @@ public class StatsService {
         return maxMonth + 1;
     }
 
-    public int NumbMonthMinSale(long[] sales) {
+    public int numbMonthMinSale(long[] sales) {
         int minMonth = 0;
         int month = 0;
         for (long sale : sales) {
@@ -46,26 +46,26 @@ public class StatsService {
         return minMonth + 1;
     }
 
-    public int AboveAverage(long[] sales) {
-        long AverageSum = AverageSum(sales);
-        int AboveAverage = 0;
+    public int aboveAverage(long[] sales) {
+        long averageSum = averageSums(sales);
+        int aboveAverage = 0;
         for (long sale : sales) {
-            if (AverageSum > sale) {
-                AboveAverage++;
+            if (averageSum > sale) {
+                aboveAverage++;
             }
         }
-        return AboveAverage;
+        return aboveAverage;
     }
 
-    public int BelowAverage(long[] sales) {
+    public int belowAverage(long[] sales) {
         int month = 0;
-        long AverageSum = AverageSum(sales);
-        int BelowAverage = 0;
+        long averageSum = averageSums(sales);
+        int belowAverage = 0;
         for (long sale : sales) {
-            if (AverageSum < sale) {
-                BelowAverage++;
+            if (averageSum < sale) {
+                belowAverage++;
             }
         }
-        return BelowAverage;
+        return belowAverage;
     }
 }

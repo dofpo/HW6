@@ -17,7 +17,7 @@ public class TestSales {
     public void TestAverageSum() {
         StatsService manager = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = (int) manager.AverageSum(sales);
+        int actual = (int) manager.averageSums(sales);
         int expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
         Assertions.assertEquals(expected, actual);
     }
@@ -26,7 +26,7 @@ public class TestSales {
     public void TestMaxNumbMonthSale() {
         StatsService manager = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = manager.NumbMonthMaxSale(sales);
+        int actual = manager.numbMonthMaxSale(sales);
         int expected = 8;
         Assertions.assertEquals(expected, actual);
     }
@@ -35,7 +35,7 @@ public class TestSales {
     public void TestMinNumbMonthSale() {
         StatsService manager = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = manager.NumbMonthMinSale(sales);
+        int actual = manager.numbMonthMinSale(sales);
         int expected = 9;
         Assertions.assertEquals(expected, actual);
     }
@@ -44,7 +44,7 @@ public class TestSales {
     public void TestAboveAverageMonthSale() {
         StatsService manager = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = manager.AboveAverage(sales);
+        int actual = manager.aboveAverage(sales);
         int expected = 5;
         Assertions.assertEquals(expected, actual);
     }
@@ -53,7 +53,7 @@ public class TestSales {
     public void TestBelowAverageMonthSale() {
         StatsService manager = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = manager.BelowAverage(sales);
+        int actual = manager.belowAverage(sales);
         int expected = 5;
         Assertions.assertEquals(expected, actual);
     }

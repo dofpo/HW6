@@ -5,10 +5,10 @@ public class Main {
         StatsService manager = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         System.out.println(manager.sum(sales));
-        System.out.println(manager.AverageSum(sales));
-        System.out.println(manager.NumbMonthMaxSale(sales));
-        System.out.println(manager.NumbMonthMinSale(sales));
-        System.out.println(manager.AboveAverage(sales));
-        System.out.println(manager.BelowAverage(sales));
+        System.out.println(manager.averageSums(sales));
+        System.out.println(manager.numbMonthMaxSale(sales));
+        System.out.println(manager.numbMonthMinSale(sales));
+        System.out.println(manager.aboveAverage(sales));
+        System.out.println(manager.belowAverage(sales));
     }
 }
